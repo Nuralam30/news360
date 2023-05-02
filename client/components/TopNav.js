@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaUser } from 'react-icons/fa';
 
 const TopNav = () => {
     return (
@@ -24,7 +25,10 @@ const TopNav = () => {
                             <Link href="/culture" className="nav-link">Culture</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/TV" className="nav-link">TV</Link>
+                            <Link href="/tv" className="nav-link">TV</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/login" className="nav-link"><FaUser className='user-icon' />Login</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.1rem;
+}
+
+
+/* ============ global css styles ====== */
+.font-12{
+    font-size: 1.2rem;
+}
+.font-14{
+    font-size: 1.4rem;
+}
+.font-16{
+    font-size: 1.6rem;
+}
+.font-18{
+    font-size: 1.8rem;
+}
+
+
+/* ========== login page style =========== */
+.login,
+.register{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form,
+.register-form{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.form-control{
+    box-shadow: none;
+}
+
+.user-icon{
+    font-size: 1.4rem;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 5px;
+}
