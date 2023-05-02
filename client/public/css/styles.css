@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-size: 1.1rem;
 }
@@ -25,6 +24,35 @@ body{
 }
 
 
+/* ========= topnav section style =========== */
+.nav-item{
+    margin: 0px 5px;
+}
+.user-icon{
+    font-size: 1.4rem;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 5px;
+}
+.search-box{
+    height: 35px;
+    background-color: #dedede;
+    margin: 0;
+    padding: 0;
+}
+.search-box input{
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+}
+.search-icon{
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+
 /* ========== login page style =========== */
 .login,
 .register{
@@ -33,7 +61,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .login-form,
 .register-form{
     max-width: 350px;
@@ -41,12 +68,4 @@ body{
 }
 .form-control{
     box-shadow: none;
-}
-
-.user-icon{
-    font-size: 1.4rem;
-    border: 1px solid #dedede;
-    border-radius: 50%;
-    padding: 3px;
-    margin-right: 5px;
 }

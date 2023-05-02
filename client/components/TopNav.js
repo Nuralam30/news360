@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaUser } from 'react-icons/fa';
+import { FaUser, FaSearch } from 'react-icons/fa';
 
 const TopNav = () => {
     return (
@@ -10,7 +10,7 @@ const TopNav = () => {
                     <Link className='navbar-brand' href='/'>News360</Link>
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link href="/" className="nav-link">Home</Link>
+                            <Link href="/" className="nav-link active">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/news" className="nav-link">News</Link>
@@ -31,6 +31,9 @@ const TopNav = () => {
                             <Link href="/login" className="nav-link"><FaUser className='user-icon' />Login</Link>
                         </li>
                     </ul>
+                    <div className="search-box">
+                        <input type="text" placeholder='Search news360' /><FaSearch className='search-icon' />
+                    </div>
                 </div>
             </nav>
         </div>
