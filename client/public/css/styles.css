@@ -6,10 +6,17 @@
 }
 body{
     font-size: 1.1rem;
+    background-color: #fff;
 }
 
 
 /* ============ global css styles ====== */
+.font-8{
+    font-size: 0.9rem
+}
+.font-9{
+    font-size: 0.98rem;
+}
 .font-12{
     font-size: 1.2rem;
 }
@@ -21,6 +28,14 @@ body{
 }
 .font-18{
     font-size: 1.8rem;
+}
+
+/* ========global font colors ======= */
+.gray{
+    color: #8a8989;
+}
+.blue{
+    color: #0099ff;
 }
 
 
@@ -50,6 +65,60 @@ body{
 .search-icon{
     margin: 0px 8px;
     cursor: pointer;
+}
+
+/* ======= home page style ======== */
+.home-content{
+    padding: 40px 50px;
+}
+.adsense{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7ecee;
+}
+
+.banner-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.top-news,
+.update-news{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top-news{
+    height: 350px;
+}
+.news-content{
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    margin: 0 auto;
+    color: #fff;
+}
+.left-border{
+    text-transform: uppercase;
+    border-left: 3px solid tomato;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+}
+.update-news{
+    height: 167px;
+    margin-bottom: 15px;
+}
+
+
+/* ======== body content style ======== */
+.body-content{
+    padding: 30px 0px;
+}
+.newses img{
+    width: 100%;
 }
 
 
