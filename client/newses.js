@@ -1,5 +1,5 @@
 
-export const news = [
+export const newses = [
     {
         country: "Afganisthan",
         headline: "Nothing we can do but watch babies die",

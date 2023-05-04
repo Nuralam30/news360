@@ -10,7 +10,7 @@ body{
 }
 
 
-/* ============ global css styles ====== */
+/* ============ global font sizes styles ====== */
 .font-8{
     font-size: 0.9rem
 }
@@ -30,13 +30,56 @@ body{
     font-size: 1.8rem;
 }
 
+/* ============ global font weights ====== */
+.fontw-300{
+    font-weight: 300;
+}
+.fontw-400{
+    font-weight: 400;
+}
+.fontw-500{
+    font-weight: 500;
+}
+.fontw-600{
+    font-weight: 600;
+}
+
+
 /* ========global font colors ======= */
+.white{
+    color: #fff;
+}
 .gray{
     color: #8a8989;
 }
 .blue{
     color: #0099ff;
 }
+
+/* ========global background colors ======= */
+.bg-white{
+    background-color: #fff;
+}
+.bg-red{
+    background-color: red;
+}
+
+
+/* ========common style ==========*/
+.top-news,
+.update-news,
+.news,
+.reel{
+    opacity: 1;
+}
+.top-news:hover,
+.update-news:hover,
+.news:hover,
+.reel:hover{
+    opacity: 0.8;
+}
+
+
 
 
 /* ========= topnav section style =========== */
@@ -91,7 +134,7 @@ body{
     background-size: cover;
 }
 .top-news{
-    height: 350px;
+    min-height: 350px;
 }
 .news-content{
     position: absolute;
@@ -102,13 +145,13 @@ body{
 }
 .left-border{
     text-transform: uppercase;
-    border-left: 3px solid tomato;
+    border-left: 2px solid #ffdd47;
     margin: 0;
     padding: 0;
     padding-left: 8px;
 }
 .update-news{
-    height: 167px;
+    min-height: 167px;
     margin-bottom: 15px;
 }
 
@@ -117,8 +160,57 @@ body{
 .body-content{
     padding: 30px 0px;
 }
-.newses img{
+.section-title{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border-left: 3px solid red;
+    padding-left: 8px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+.news img{
     width: 100%;
+}
+
+/*  =========== reels section style ========== */
+.reels-section{
+    min-height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/reel-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.reel-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.reel-btn{
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 4px 15px;
+}
+.reel img{
+    width: 100%;
+}
+.reel h5{
+    padding: 15px 10px;
+}
+
+
+/* ============= latest-business-news section style ============ */
+.latest-business-news{
+    min-height: 20vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+.buisness-news{
+    padding: 20px;
+}
+.buisness-news{
+    padding: 20px;
 }
 
 
