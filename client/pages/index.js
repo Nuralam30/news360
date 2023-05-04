@@ -123,21 +123,29 @@ const Home = () => {
                 <div className="row">
                     <p className="section-title">Editor's Picks</p>
                     <div className="col-md-8">
-                        <div className="top-news" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${newses[0].images[0].image})` }}>
+                        <div className="top-news mb-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${newses[0].images[0].image})` }}>
                             <div className="news-content">
                                 <h2>{newses[0].headline}</h2>
                                 <p className="font-9">{newses[0].title}</p>
                                 <span className="left-border font-8">{newses[0].country}</span>
                             </div>
                         </div>
+
+                        <div className="row">
+                            {
+                                filterNews("news", 3).map((item, i) => <div className='col-md-4'>
+                                    <News news={item} />
+                                </div>)
+                            }
+                        </div>
                     </div>
 
                     <div className="col-md-4">
                         <div className="latest-business-news">
-                            <p className='news-title white bg-red p-2 text-uppercase fontw-500'>Latest Business News</p>
+                            <p className='news-title white bg-red m-0 p-2 text-uppercase fontw-600'>Latest Business News</p>
                                 {
                                     filterNews('news', 4).map((item, i) => <div className='buisness-news w-100' key={i}>
-                                    <h4 className='gray'>{item.headline}</h4>
+                                    <h4 className='gray fontw-400'>{item.headline}</h4>
                                 </div>)
                                 }
                         </div>
