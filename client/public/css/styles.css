@@ -174,10 +174,13 @@ body{
 }
 
 /*  =========== reels section style ========== */
+
+.reels-section{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/reel-back.jpg');
+}
 .reels-section,
 .future-planet{
     min-height: 30vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/reel-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -194,7 +197,7 @@ body{
     border-radius: 20px;
     padding: 4px 15px;
 }
-.reel img{
+.reel video{
     width: 100%;
 }
 .reel h5{
@@ -217,6 +220,10 @@ body{
 }
 .buisness-news:hover h4{
     color: #fff;
+}
+
+.future-planet{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/planet.jpg');
 }
 
 

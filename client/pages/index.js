@@ -65,7 +65,7 @@ const Home = () => {
                         <div className="row">
                             <p className="section-title font-12">Sports</p>
                             {
-                                filterNews("news", 3).map((item, i) => <div className='col-md-4 mb-3' key={i}>
+                                filterNews("sport", 3).map((item, i) => <div className='col-md-4 mb-3' key={i}>
                                     <News news={item} />
                                 </div>)
                             }
@@ -92,7 +92,7 @@ const Home = () => {
                             <Link href='#' className='reel-btn white font-12'>Visit Reel <FaArrowRight /></Link>
                         </div>
                         {
-                            filterNews("news", 3).map((item, i) => <div className='col-md-4' key={i}>
+                            filterNews("reel", 3).map((item, i) => <div className='col-md-4' key={i}>
                                 <Reels reel={item} />
                             </div>)
                         }
@@ -163,7 +163,7 @@ const Home = () => {
                             <Link href='#' className='reel-btn white font-12'>Visit Future Planet <FaArrowRight /></Link>
                         </div>
                         {
-                            filterNews("news", 3).map((item, i) => <div className='col-md-4' key={i}>
+                            filterNews("reel", 3).map((item, i) => <div className='col-md-4' key={i}>
                                 <Reels reel={item} />
                             </div>)
                         }
