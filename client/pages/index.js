@@ -4,6 +4,7 @@ import News from '../components/news';
 import { newses } from '../newses';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
+import Reels from '../components/reels';
 
 const Home = () => {
 
@@ -92,10 +93,7 @@ const Home = () => {
                         </div>
                         {
                             filterNews("news", 3).map((item, i) => <div className='col-md-4' key={i}>
-                                <div className="reel">
-                                    <img src={item.images[0].image} alt="reel cover" />
-                                    <h5 className='bg-white'>{item.headline}</h5>
-                                </div>
+                                <Reels reel={item} />
                             </div>)
                         }
                     </div>
@@ -143,12 +141,32 @@ const Home = () => {
                     <div className="col-md-4">
                         <div className="latest-business-news">
                             <p className='news-title white bg-red m-0 p-2 text-uppercase fontw-600'>Latest Business News</p>
-                                {
-                                    filterNews('news', 4).map((item, i) => <div className='buisness-news w-100' key={i}>
+                            {
+                                filterNews('news', 4).map((item, i) => <div className='buisness-news w-100' key={i}>
                                     <h4 className='gray fontw-400'>{item.headline}</h4>
                                 </div>)
-                                }
+                            }
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="future-planet">
+                <div className="container-fluid home-content">
+                    <div className="row">
+                        <div className="reel-header mb-2">
+                            <div className="heading">
+                                <h3 className='white'>Future Planet</h3>
+                                <p className="white">Solutions for a sustainable world</p>
+                            </div>
+                            <Link href='#' className='reel-btn white font-12'>Visit Future Planet <FaArrowRight /></Link>
+                        </div>
+                        {
+                            filterNews("news", 3).map((item, i) => <div className='col-md-4' key={i}>
+                                <Reels reel={item} />
+                            </div>)
+                        }
                     </div>
                 </div>
             </div>
