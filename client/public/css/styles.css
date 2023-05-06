@@ -206,12 +206,17 @@ body{
 }
 
 
-/* ============= latest-business-news section style ============ */
+/* ============= editors pick and latest-business-news section style ============ */
+.editors-pick .top-news{
+    min-height: 70vh;
+}
 .latest-business-news{
     min-height: 20vh;
 }
 .buisness-news{
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 .buisness-news:nth-child(odd){
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
@@ -219,13 +224,92 @@ body{
 .buisness-news:nth-child(even){
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)); 
 }
+.buisness-news .index{
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 .buisness-news:hover h4{
     color: #fff;
 }
 
+/* =======future planet style ======== */
 .future-planet{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/planet.jpg');
 }
+
+
+/* ========== business and global trade style ========= */
+.business-global .update-news{
+    min-height: 50vh;
+}
+
+
+/* =========== explore news360 style========== */
+.explore-news360{
+    background-color: #1f1f1f;
+}
+.bottom-navbar{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.bottom-nav-link{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-nav-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    border-right: 2px solid gray;
+}
+.bottom-nav-link a:hover{
+    color: #8f8f8f;
+}
+
+
+/* ============ featured section style ========== */
+.featured-video .reel2{
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))
+}
+.reel2 video{
+    width: 100%;
+    height: 100%;
+}
+.featured-video .play-icon{
+    background-color: red;
+    padding: 12px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.reel2 .video-heading{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+
+/* ================= terms and help style ======== */
+.terms-help{
+    display: flex;
+    flex-wrap: wrap;
+}
+.terms-help a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+.terms-help a:hover{
+    text-decoration: underline;
+}
+
 
 
 /* ========== login page style =========== */
