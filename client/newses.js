@@ -1,5 +1,4 @@
 
-
 export const newses = [
     {
         country: "Afganisthan",
@@ -269,7 +268,7 @@ export const newses = [
             name: "Priyanka Mukherjee",
             profession: "Executive Producer: Griesham Taan"
         },
-        video: "https://www.youtube.com/watch?v=m4wllxpGKew",
+        video: "https://firebasestorage.googleapis.com/v0/b/news360-2b883.appspot.com/o/videos%2Fculture.mp4?alt=media&token=f94badae-d247-40db-a720-f3fe649b3d54",
         description:`The Kama Sutra is an ancient Indian Sanskrit text written by Vātsyāyana, a celibate Indian philosopher.
 
         In the Western world the text is perceived as an erotic manual, however it has been deeply misunderstood.
@@ -280,13 +279,13 @@ export const newses = [
     },
     {
         type: "travel",
-        headline: "Nothing we can do but watch babies die",
+        headline: "Why do French men pee on the street?",
         category: "reel",
         by: {
                 name: "Daphnée Denis",
                 profession: "Series Producer Anna Bressanin"
             },
-        video: "https://www.youtube.com/watch?v=orbkg5JH9C8",
+        video: "https://firebasestorage.googleapis.com/v0/b/news360-2b883.appspot.com/o/videos%2Ftravel.mp4?alt=media&token=56dbd673-2a63-47b4-8eff-76cf89eed7d4",
         description: `Every year, Paris tries new, 'revolutionary' methods to stop men from peeing outside. In 2018, red flower pots equipped with urinals, allowed men to unzip and relieve themselves right on the streets of the French capital’s iconic Ile St Louis. The following year, another short-lived urinal project tried to make fertiliser out of men’s pee. Of course, public urination is a problem in most big cities, and public restrooms are an essential service, especially for people experiencing homelessness. Yet many street urinators in Paris are offenders of opportunity rather than necessity. The city has even come up with a name for it: 'les pipis sauvages', or 'wild pee'. In her first column for the BBC, Daphnée Denis investigates why Paris is so prone to public urination: is it a historical, sociological or psychological issue? What is the real reason behind this habit?`
     },
     {
@@ -297,7 +296,7 @@ export const newses = [
                 name: "Jessica Brown",
                 profession: "Animation by Adam Proctor"
             },
-        video: "https://www.youtube.com/watch?v=FUiu-cdu6mA",
+        video: "https://firebasestorage.googleapis.com/v0/b/news360-2b883.appspot.com/o/videos%2Fmotivational.mp4?alt=media&token=86860c58-dcf0-41df-ad56-14cf8152b14a",
         description: `The grapefruit might be one of the strangest fruits around. Everything from its origins to how it got its name are a bit of a mystery. Its taste is almost uniquely bitter, and yet its popularity boomed in the US during the 20th Century.
 
         But perhaps strangest of all, the grapefruit hides a deadly secret. For some people, drinking just one glass of grapefruit juice could have shocking consequences.`

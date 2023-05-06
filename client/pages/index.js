@@ -1,10 +1,10 @@
 
+import Reels from '../components/Reels';
 import { filterNews } from '../components/filter';
 import News from '../components/news';
 import { newses } from '../newses';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import Reels from '../components/reels';
 
 const Home = () => {
 

@@ -199,6 +199,7 @@ body{
 }
 .reel video{
     width: 100%;
+    height: 200px;
 }
 .reel h5{
     padding: 15px 10px;
