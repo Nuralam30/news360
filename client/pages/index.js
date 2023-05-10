@@ -5,9 +5,17 @@ import { newses } from '../newses';
 import { Reels, Reels2, Reels3 } from '../components/reels';
 import { News, News2 } from '../components/news';
 import Link from 'next/link';
-import { FaArrowRight, FaCopy } from 'react-icons/fa';
+import { FaArrowRight, FaCopyright, FaCamera,  } from 'react-icons/fa';
 
 const Home = () => {
+
+    const today = new Date();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    const day = days[today.getDay()];
+    const date = today.getDate();
+    const month = months[today.getMonth()];
 
     return (
         <div className="homepage">
@@ -20,7 +28,7 @@ const Home = () => {
                 <div className="row banner-content">
                     <div className="banner-heading">
                         <h4>Welcome to news360.com</h4>
-                        <p className='font-14 gray'>Wednesday, 3 May</p>
+                        <p className='font-14 gray'>{day}, {date} {month}</p>
                     </div>
                     <div className="col-md-6 mb-2">
                         <div className="top-news" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${newses[0].images[0].image})` }}>
@@ -35,7 +43,7 @@ const Home = () => {
                         <div className="row">
                             {
                                 filterNews("news", 4).map((n, i) => <div className="col-md-6" key={i}>
-                                    <News2 item={n} />
+                                    <News2 news={n} />
                                 </div>)
                             }
                         </div>
@@ -52,7 +60,7 @@ const Home = () => {
                             <p className="section-title font-12">News</p>
                             {
                                 filterNews("news", 3).map((item, i) => <div className='col-md-4 mb-3' key={i}>
-                                    <News news={item} />
+                                    <News news={item} title={true} />
                                 </div>)
                             }
                         </div>
@@ -62,7 +70,7 @@ const Home = () => {
                             <p className="section-title font-12">Sports</p>
                             {
                                 filterNews("sport", 3).map((item, i) => <div className='col-md-4 mb-3' key={i}>
-                                    <News news={item} />
+                                    <News news={item} title={true} />
                                 </div>)
                             }
                         </div>
@@ -104,7 +112,7 @@ const Home = () => {
                         <p className="section-title">Asia News</p>
                         {
                             filterNews("news", 4).map((item, i) => <div className='col-md-3 mb-2' key={i}>
-                                <News news={item} />
+                                <News news={item} title={true} />
                             </div>)
                         }
                     </div>
@@ -128,7 +136,7 @@ const Home = () => {
                         <div className="row">
                             {
                                 filterNews("news", 3).map((item, i) => <div className='col-md-4 mb-2'>
-                                    <News news={item} />
+                                    <News news={item} title={true} />
                                 </div>)
                             }
                         </div>
@@ -136,7 +144,7 @@ const Home = () => {
                         <div className="row">
                             {
                                 filterNews("sport", 3).map((item, i) => <div className='col-md-4'>
-                                    <News news={item} />
+                                    <News news={item} title={true} />
                                 </div>)
                             }
                         </div>
@@ -185,7 +193,7 @@ const Home = () => {
                         <h4 className='text-uppercase'>Technology of Business</h4>
                         {
                             filterNews("news", 2).map((n, i) => <div className="col-md-6" key={i}>
-                                <News2 item={n} />
+                                <News2 news={n} />
                             </div>)
                         }
                     </div>
@@ -216,10 +224,35 @@ const Home = () => {
             </div>
 
 
+            {/* ============= world in pictures in home page ================ */}
+            <div className="world-pictures">
+                <div className="container-fluid home-content">
+                    <div className="row world-big-pictures">
+                        <h4 className="section-title mb-3">World in pictures</h4>
+                        {
+                            filterNews('news', 2).map((item, i) => <div className="col-md-6 world-in-picture" key={i}>
+                                <News2 news={item} />
+                                <FaCamera className="camera-icon" />
+                            </div>)
+                        }
+                    </div>
+
+                    <div className="row world-small-pictures">
+                        {
+                            filterNews('news', 3).map((item, i) => <div className="col-md-4 world-in-picture" key={i}>
+                                <News news={item} title={false} />
+                                <FaCamera className="camera-icon" />
+                            </div>)
+                        }
+                    </div>
+                </div>
+            </div>
+
+
             {/* ============ explore the news360 in home page ========== */}
             <div className="explore-news360">
                 <div className="container-fluid home-content">
-                    <h4 className='white mb-4'>Explore the News360 </h4>
+                    <h4 className='white mb-3'>Explore the News360 </h4>
                     <div className="row bottom-navbar">
                         <div className="col-md-4 bottom-nav-link">
                             <Link href='/'>Home</Link>
@@ -245,7 +278,7 @@ const Home = () => {
                         <Link href='#'>Contact the News360</Link>
                         <Link href='#'>Advertise with us</Link>
                     </div>
-                    <p className='white font-9'><b>Copyright <FaCopy /> 2023 News360 .</b> The News360 is not responsible for the content of external sites.</p>
+                    <p className='white font-9'><b>Copyright <FaCopyright /> 2023 News360 .</b> The News360 is not responsible for the content of external sites.</p>
                 </div>
             </div>
         </div>
