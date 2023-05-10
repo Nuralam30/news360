@@ -1,12 +1,11 @@
 
-import Reels from '../components/Reels';
+
 import { filterNews } from '../components/filter';
-import News from '../components/news';
 import { newses } from '../newses';
+import { Reels, Reels2, Reels3 } from '../components/reels';
+import { News, News2 } from '../components/news';
 import Link from 'next/link';
 import { FaArrowRight, FaCopy } from 'react-icons/fa';
-import { News2 } from '../components/news2';
-import { Reels2 } from '../components/reels2';
 
 const Home = () => {
 
@@ -197,12 +196,22 @@ const Home = () => {
             {/* ========= featured video in home page  ========== */}
             <div className='featured-video'>
                 <div className='container-fluid home-content'>
-                    <h3 className='text-uppercase'>Featured video</h3>
-                    {
-                        filterNews("reel", 1).map((item, i) => <div className='row p-2' key={i}>
-                            <Reels2 reel={item} />
-                        </div>)
-                    }
+                    <h3 className='text-uppercase mb-3'>Featured video</h3>
+                    <div className="featured-reels">
+                        {
+                            filterNews("reel", 1).map((item, i) => <div className='row p-2' key={i}>
+                                <Reels2 reel={item} />
+                            </div>)
+                        }
+
+                        <div className="row related-reels">
+                            {
+                                filterNews("reel", 3).map((item, i) => <div className="col-md-4" key={i}>
+                                    <Reels3 reel={item} />
+                                </div>)
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
 
